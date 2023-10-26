@@ -76,4 +76,4 @@ console.log("")
 console.log("O Herói tem de saldo de " + win ,"vitorias e está no nível de " + rankStatus)
 console.log("")
 //Add resultRank em console.log para ver o resultado do calculo
-//console.log(resultRank)
+//console.log(resultRank )
