@@ -4,16 +4,22 @@
 depois disso retorne o resultado para uma variável, 
 o saldo de Rankeadas deve ser feito através do calculo (vitórias - derrotas) */
 
-let win = 700
+let win = 30
 let loss = 10
 let resultRank = calculatorRank (win, loss)
 let rankStatus = " "
 
-function calculatorRank (a,b){
-    calc = a - b
-    return(calc)
-    
+//Como o enunciado pede um laço então add um carregando
+for(let contador = 10; contador != 0; contador -= 1){
+    console.log("Carregando..." + contador)
 }
+
+    function calculatorRank (a,b){
+        calc = a - b        
+        return(calc)
+    
+    } 
+
 /*
 Se vitórias for menor do que 10 = Ferro */
 
@@ -66,7 +72,8 @@ else if (resultRank >= 101)
 else
     rankStatus = "Ferro"
 
+console.log("")
 console.log("O Herói tem de saldo de " + win ,"vitorias e está no nível de " + rankStatus)
-
+console.log("")
 //Add resultRank em console.log para ver o resultado do calculo
 //console.log(resultRank)
